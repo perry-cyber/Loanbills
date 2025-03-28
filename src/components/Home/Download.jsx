@@ -14,7 +14,7 @@ export default function Download() {
             <img src={image} alt="Download app" className="w-full h-auto object-contain max-w-xs md:max-w-sm lg:max-w-md" />
           </div>
           <div className="flex-1 text-center md:text-left text-white">
-            <h1 className="text-3xl font-bold mb-4">Download our Apps!</h1>
+            <h1 className="text-3xl font-bold mb-4">Download our App!</h1>
             <p className="text-lg mb-6">
               Download our apps available on Playstore and Appstore!
             </p>
