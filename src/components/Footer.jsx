@@ -21,9 +21,7 @@ const Footer = () => {
             </h1>
           </div>
           <p className="text-sm text-gray-300">
-            We believe that the right tools empower everyone to stay focused,
-            organized, and motivated, helping them achieve their goals
-            efficiently.
+          At Loanbillsfx, we believe that the right financial tools empower everyone to stay connected, secure, and in control. Whether you're sending money across borders, booking international flights, or managing your bills and utilities, our seamless solutions help you achieve your goals efficiently and effortlessly.
           </p>
         </div>
 
