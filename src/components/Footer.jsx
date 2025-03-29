@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="flex items-center gap-2 mb-4">
             <div className="bg-yellow-400 w-10 h-10 rotate-45"></div>
             <h1 className="text-2xl font-bold">
-              Plan<span className="tracking-wide">Box</span>
+              LoanBills<span className="tracking-wide">FX</span>
             </h1>
           </div>
           <p className="text-sm text-gray-300">
@@ -25,37 +25,15 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Pages */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Pages</h3>
-          <ul className="space-y-2 text-gray-300">
-            <li>Home</li>
-            <li>About us</li>
-            <li>Service</li>
-            <li>Pricing</li>
-            <li>Blogs</li>
-          </ul>
-        </div>
-
-        {/* Company */}
-        <div>
-          <h3 className="text-lg font-semibold mb-4">Company</h3>
-          <ul className="space-y-2 text-gray-300">
-            <li>Faq</li>
-            <li>404</li>
-            <li>Coming Soon</li>
-            <li>Contact us</li>
-          </ul>
-        </div>
 
         {/* Utility Page */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Utility Page</h3>
+          <h3 className="text-lg font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-gray-300">
-            <li>Licensing</li>
-            <li>Changelog</li>
-            <li>Cookie Policy</li>
-            <li>Privacy Policy</li>
+            <li>Bills Payment</li>
+            <li>Flight</li>
+            <li>Currency Exchange</li>
+            <li>International Transfers</li>
             <li>Terms & Conditions</li>
           </ul>
         </div>
@@ -64,7 +42,7 @@ const Footer = () => {
       {/* Bottom section */}
       <div className="mt-12 border-t border-gray-800 pt-6 flex flex-col md:flex-row justify-between items-center">
         <p className="text-sm text-gray-400">
-          © 2025 Planbox. All Rights Reserved. Powered by Webflow.
+          © 2025 Loanbillsfx. All Rights Reserved.
         </p>
         <div className="flex gap-4 mt-4 md:mt-0">
           <a href="#" className="bg-white text-black p-2 rounded-full">
