@@ -6,6 +6,7 @@ import Download from '../../components/Home/Download';
 import WhyUs from '../../components/Home/WhyUs';
 import FLightCard from '../../components/Home/FlightCard/FlightCard';
 import DashboardFooter from '../../components/DashboardFooter';
+import Footer from '../../components/Footer';
 
 
 function Home() {
@@ -54,7 +55,7 @@ function Home() {
       
       <WhyUs />
 
-      <DashboardFooter/>
+     <Footer/>
       
     </div>
   );
