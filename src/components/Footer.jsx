@@ -10,7 +10,7 @@ import logo from '../assets/loanbills-removebg-preview.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-black border border-t-white text-white px-6 md:px-20 py-12">
+    <footer className="bg-black border-t border-white text-white px-6 md:px-20 py-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Logo & Description */}
         <div className="md:col-span-1">
@@ -54,6 +54,9 @@ const Footer = () => {
           © 2025 Loanbillsfx. All Rights Reserved.
         </p>
         <div className="flex gap-4 mt-4 md:mt-0">
+        <a href="/privacy" className="hover:text-gray-900 text-[13px] underline dark:hover:text-gray-300">
+            Privacy Policy
+          </a>
           <a href="#" className="bg-white text-black p-2 rounded-full">
             <FaFacebookF />
           </a>
@@ -66,9 +69,7 @@ const Footer = () => {
           <a href="#" className="bg-white text-black p-2 rounded-full">
             <FaLinkedinIn />
           </a>
-          <a href="/privacy" className="hover:text-gray-900 text-[13px] underline dark:hover:text-gray-300">
-            Privacy Policy
-          </a>
+          
         </div>
       </div>
     
