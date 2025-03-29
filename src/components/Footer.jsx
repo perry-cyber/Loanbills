@@ -21,7 +21,7 @@ const Footer = () => {
             </h1>
           </div>
           <p className="text-sm text-gray-300">
-          At Loanbillsfx, we believe that the right financial tools empower everyone to stay connected, secure, and in control. Whether you're sending money across borders, booking international flights, or managing your bills and utilities, our seamless solutions help you achieve your goals efficiently and effortlessly.
+             Stay connected and secure. Whether you're sending money across borders, booking international flights, or managing your bills and utilities, our solutions help you achieve your goals.
           </p>
         </div>
 
