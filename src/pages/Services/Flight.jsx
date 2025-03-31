@@ -2,6 +2,8 @@
 import React, { useState } from "react";
 import { FaExchangeAlt, FaUser, FaPlane, FaCalendarAlt } from "react-icons/fa";
 import FlightSearchResults from "../../components/Home/FlightCard/FlightResult";
+import TravelFeatures from "../../components/FlightFeature";
+import DashboardFooter from "../../components/DashboardFooter";
 
 export default function FlightPage() {
   const [tripType, setTripType] = useState("round");
@@ -40,26 +42,28 @@ export default function FlightPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-900 to-indigo-900 flex items-center justify-center p-4">
-      <div className="bg-white shadow-lg rounded-lg p-8 w-full ">
+    <>
+    <div className="pt-16 pb-16 min-h-auto bg-gradient-to-b from-black to-gray-200 flex items-center flex-col  justify-center p-4">
+      <div className="bg-gradient-to-b from-gray-200 to-gray-400  shadow-lg rounded-lg p-8 w-full ">
         
         {/* Trip Type Selection */}
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="flex gap-4">
+          <div className="flex  gap-4">
             {["one", "round", "multi"].map((type) => (
-              <label key={type} className="flex items-center">
-                <input
-                  type="radio"
-                  name="trip"
-                  value={type}
-                  checked={tripType === type}
-                  onChange={() => setTripType(type)}
-                  className="mr-2"
-                />
-                {type === "one" && "One Way"}
-                {type === "round" && "Round Trip"}
-                {type === "multi" && "Multi City"}
-              </label>
+             <label key={type}  className="flex sm:text-[12px] items-center">
+             <input
+               type="radio"
+               name="trip"
+               value={type}
+               checked={tripType === type}
+               onChange={() => setTripType(type)}
+               className="mr-2 accent-black"
+             />
+             {type === "one" && "One Way"}
+             {type === "round" && "Round Trip"}
+             {type === "multi" && "Multi City"}
+           </label>
+           
             ))}
           </div>
           <select className="mt-4 md:mt-0 p-2 border rounded w-full md:w-auto">
@@ -128,19 +132,20 @@ export default function FlightPage() {
         <div className="mt-6">
           <button
             onClick={handleSearch}
-            className="bg-orange-500 text-white px-6 py-3 rounded-md w-full md:w-auto hover:bg-orange-600 transition"
+            className="bg-black text-white px-6 py-3 rounded-md w-full md:w-auto hover:bg-slate-900 transition"
           >
             SEARCH
           </button>
         </div>
+       
 
-        {/* Flight Results */}
+        {/* Flight Results
         {searchResults.length > 0 && (
           <div className="mt-8">
             <h3 className="text-2xl font-bold">Flight Results</h3>
             <FlightSearchResults />
           </div>
-        )}
+        )} */}
 
         {/* City Selection Modal */}
         {showModal && (
@@ -172,6 +177,10 @@ export default function FlightPage() {
           </div>
         )}
       </div>
+      <TravelFeatures/>
+ 
     </div>
+    <DashboardFooter />
+    </>
   );
 }
